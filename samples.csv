@@ -1,0 +1,11 @@
+SAMPLE,SHOTGUN,PROXIMA
+L10,L10_Lib_2_S39_L003_R[12]_001.fastq.gz;L10_Lib_2_S91_L003_R[12]_001.fastq.gz,P10_Proxi_combo_L001_R[12]_001.fastq.gz;P10_Proxi_2_S111_L003_R[12]_001.fastq.gz;P10_Proxi_2_S59_L003_R[12]_001.fastq.gz
+L11,L11_Lib_S40_L003_R[12]_001.fastq.gz;L11_Lib_S92_L003_R[12]_001.fastq.gz,L11_Proxi_combo_L001_R[12]_001.fastq.gz;L11_Proxi_S41_L003_R[12]_001.fastq.gz;L11_Proxi_S93_L003_R[12]_001.fastq.gz
+L12,L12_Lib_S42_L003_R[12]_001.fastq.gz;L12_Lib_S94_L003_R[12]_001.fastq.gz,P12_Proxi_2_S112_L003_R[12]_001.fastq.gz;P12_Proxi_2_S60_L003_R[12]_001.fastq.gz
+L13,L13_L_S43_L003_R[12]_001.fastq.gz;L13_L_S95_L003_R[12]_001.fastq.gz,L13_Proxi_combo_L001_R[12]_001.fastq.gz;L13_Proxi_S44_L003_R[12]_001.fastq.gz;L13_Proxi_S96_L003_R[12]_001.fastq.gz
+L16,L16_Cl_S45_L003_R[12]_001.fastq.gz;L16_Cl_S97_L003_R[12]_001.fastq.gz,L16_Proxi_combo_L001_R[12]_001.fastq.gz;L16_Proxi_S46_L003_R[12]_001.fastq.gz;L16_Proxi_S98_L003_R[12]_001.fastq.gz
+L18,L18_Cl_S47_L003_R[12]_001.fastq.gz;L18_Cl_S99_L003_R[12]_001.fastq.gz,L18_Proxi_combo_L001_R[12]_001.fastq.gz;L18_Proxi_S100_L003_R[12]_001.fastq.gz;L18_Proxi_S48_L003_R[12]_001.fastq.gz
+L2,L2_Cl_S102_L003_R[12]_001.fastq.gz;L2_Cl_S50_L003_R[12]_001.fastq.gz,L2_Proxi_combo_L001_R[12]_001.fastq.gz;L2_Proxi_S103_L003_R[12]_001.fastq.gz;L2_Proxi_S51_L003_R[12]_001.fastq.gz
+L3,L3_Lib_S106_L003_R[12]_001.fastq.gz;L3_Lib_S54_L003_R[12]_001.fastq.gz,L3_Proxi_combo_L001_R[12]_001.fastq.gz;L3_Proxi_S107_L003_R[12]_001.fastq.gz;L3_Proxi_S55_L003_R[12]_001.fastq.gz
+L5,L5_Lib2-2_S108_L003_R[12]_001.fastq.gz;L5_Lib2-2_S56_L003_R[12]_001.fastq.gz,P5_Proxi_combo_L001_R[12]_001.fastq.gz;P5_Proxi_S114_L003_R[12]_001.fastq.gz;P5_Proxi_S62_L003_R[12]_001.fastq.gz
+L8,L8_Lib_S109_L003_R[12]_001.fastq.gz;L8_Lib_S57_L003_R[12]_001.fastq.gz,L8_Proxi_combo_L001_R[12]_001.fastq.gz;L8_Proxi_S110_L003_R[12]_001.fastq.gz;L8_Proxi_S58_L003_R[12]_001.fastq.gz
