@@ -3,17 +3,17 @@
 
 module load clipkit
 module load hmmer
-module load samtools
 module load fasttree
-
-DB=Artverviricota.aa
 HMMFOLDER=HMM
 ALNDIR=results
-mkdir -p $ALNDIR
-for hmm in $(ls ${HMMFOLDER}/*.hmm)
+for DB in $(ls $ALNDIR)
 do
-	marker=$(basename $hmm .hmm)
-	hmmalign --amino -o ${ALNDIR}/${marker}.aa.msa ${HMMFOLDER}/${marker}.hmm $DB
-	esl-reformat --replace=x:- --gapsym=- afa ${ALNDIR}/${marker}.aa.msa | perl -p -e 'if (! /^>/) { s/[ZBzbXx\*]/-/g }' > ${ALNDIR}/${marker}.aa.clnaln
-	clipkit --log -m gappy -o $ALNDIR/${marker}.aa.clipkit ${ALNDIR}/${marker}.aa.clnaln
+	for hmm in $(ls ${HMMFOLDER}/*.hmm)
+	do
+		marker=$(basename $hmm .hmm)
+		hmmalign --amino -o ${ALNDIR}/$DB/${marker}.aa.msa ${HMMFOLDER}/${marker}.hmm $ALNDIR/$DB/$marker.hits.aa
+		esl-reformat --replace=x:- --gapsym=- afa ${ALNDIR}/$DB/${marker}.aa.msa | perl -p -e 'if (! /^>/) { s/[ZBzbXx\*]/-/g }' > ${ALNDIR}/$DB/${marker}.aa.clnaln
+		clipkit --log -m gappy -o $ALNDIR/$DB/${marker}.aa.clipkit ${ALNDIR}/$DB/${marker}.aa.clnaln
+		FastTreeMP -gamma -lg $ALNDIR/$DB/${marker}.aa.clipkit > $ALNDIR/$DB/${marker}.aa.clipkit.tre
+	done
 done
